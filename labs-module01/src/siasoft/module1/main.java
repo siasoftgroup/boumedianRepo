@@ -16,7 +16,7 @@ public class main {
 	 */
 	public static void main(String[] args) throws ClassNotFoundException, SQLException {
 		// TODO Auto-generated method stub
-		//verifier si un nombre est pair 
+		//verifier nombre pair 
 		test t = new test();
 		t.verifierCode();
 		System.out.println("*********************************************");
@@ -33,12 +33,13 @@ public class main {
 		System.out.println("*********************************************");
 		/* recuperation des donnees apartir de BD */
 		f.user();
+		//insertion des donnees dans la base.
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Saisissez nom client : ");
 		String nom = sc.nextLine();
 		System.out.println("Saisissez adresse client : ");
 		String adr = sc.nextLine();
-		System.out.println("Saisissez nemero de telephone client : ");
+		System.out.println("Saisissez numero de telephone client : ");
 		int tel = sc.nextInt();
 		f.ajoutuser(nom, adr, tel);
 	}
