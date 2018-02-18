@@ -1,19 +1,19 @@
 package siasoft.module1;
 
-public class automobile {
+public class Automobile {
 
 	public String constructeur;
 	public String couleur;
 	public int compteur;
 	
-	 public automobile(String cons,String color,int comp){
+	 public Automobile(String cons,String color,int comp){
 		    System.out.println("description d'une aotomobile !");          
 		    constructeur = cons;
 		    couleur = color;
 		    compteur = comp;
 		  }
 	
-	public automobile() {
+	public Automobile() {
 		// TODO Auto-generated constructor stub
 		System.out.println("description voiture");
 	}

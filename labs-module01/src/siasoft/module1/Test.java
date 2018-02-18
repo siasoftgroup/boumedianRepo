@@ -2,7 +2,12 @@ package siasoft.module1;
 
 import java.util.Scanner;
 
-public class test {
+
+/**
+ * @author Boussaid
+ *
+ */
+public class Test {
 
 	/**
 	 * Method permet de faire ....

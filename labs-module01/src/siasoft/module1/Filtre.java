@@ -10,15 +10,15 @@ import siasoft.util.connecteur;
  * @author Boussaid
  *
  */
-public class filtre extends automobile {
+public class Filtre extends Automobile {
 	private String gas;
 
-	public filtre() {
+	public Filtre() {
 		super();
 		this.gas = "aucun ";
 	}
 
-	public filtre(String cons, String color, int comp, String fair, String fgasoil, String fhuile) {
+	public Filtre(String cons, String color, int comp, String fair, String fgasoil, String fhuile) {
 		super(cons, color, comp);
 		this.gas = fgasoil;
 		System.out.println(
@@ -36,7 +36,7 @@ public class filtre extends automobile {
 		return str;
 	}
 
-	public void user() throws ClassNotFoundException, SQLException {
+	public void listeUser() throws ClassNotFoundException, SQLException {
 		Statement st = connecteur.getConnection();
 		String rq = "select * from clients ";
 		ResultSet rs = st.executeQuery(rq);
@@ -52,7 +52,7 @@ public class filtre extends automobile {
 
 	// if(rs.next()) b=true);
 	// else b=false;
-public void ajoutuser(String nom, String adr,int num) throws SQLException, ClassNotFoundException 
+public void ajoutUser(String nom, String adr,int num) throws SQLException, ClassNotFoundException 
 {
 	 
 	String rq1="";
